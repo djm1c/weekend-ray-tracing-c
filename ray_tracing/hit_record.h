@@ -6,10 +6,10 @@
 #include <stdbool.h>
 
 typedef struct {
-	Point3 point;
-	Vec3 normal;
-	double t;
-	bool front_face;
+    Point3 point;
+    Vec3 normal;
+    double t;
+    bool front_face;
 } HitRecord;
 
 #endif

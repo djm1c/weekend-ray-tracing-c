@@ -7,7 +7,7 @@
 #include <stdio.h>
 
 typedef struct {
-	double x, y, z;
+    double x, y, z;
 } Vec3;
 
 typedef Vec3 Point3;
@@ -31,4 +31,3 @@ Vec3 v3_unit(Vec3 v);
 void v3_print(Vec3 v);
 
 #endif
-

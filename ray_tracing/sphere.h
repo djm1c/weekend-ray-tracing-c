@@ -7,13 +7,13 @@
 #include <stdlib.h>
 
 typedef struct {
-	Point3 centre;
-	double radius;
+    Point3 centre;
+    double radius;
 } Sphere;
 
 typedef struct {
-	Sphere *spheres;
-	int n, max;
+    Sphere *spheres;
+    int n, max;
 } SphereList;
 
 Sphere sphere(Point3 centre, double radius);

@@ -4,7 +4,7 @@
 #include <stdbool.h>
 
 typedef struct {
-	double min, max;
+    double min, max;
 } Interval;
 
 Interval interval(double min, double max);
