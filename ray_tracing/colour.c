@@ -1,9 +1,5 @@
 #include "colour.h"
 
-#include "interval.h"
-
-#include <stdio.h>
-
 Colour colour(double r, double g, double b)
 {
 	return (Colour){ .x = r, .y = g, .z = b };

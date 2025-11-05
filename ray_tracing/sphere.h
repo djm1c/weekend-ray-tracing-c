@@ -1,7 +1,10 @@
 #ifndef SPHERE_H
 #define SPHERE_H
 
-#include "Vec3.h"
+#include "vec3.h"
+
+#include <math.h>
+#include <stdlib.h>
 
 typedef struct {
 	Point3 centre;

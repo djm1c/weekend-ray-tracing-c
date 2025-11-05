@@ -1,7 +1,10 @@
 #ifndef COLOUR_H
 #define COLOUR_H
 
+#include "interval.h"
 #include "vec3.h"
+
+#include <stdio.h>
 
 typedef Vec3 Colour;
 

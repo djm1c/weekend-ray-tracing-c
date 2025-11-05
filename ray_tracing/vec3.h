@@ -1,6 +1,11 @@
 #ifndef VEC3_H
 #define VEC3_H
 
+#include "helper.h"
+
+#include <math.h>
+#include <stdio.h>
+
 typedef struct {
 	double x, y, z;
 } Vec3;

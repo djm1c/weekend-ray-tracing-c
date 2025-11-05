@@ -2,8 +2,12 @@
 #define CAMERA_H
 
 #include "colour.h"
-#include "sphere.h"
+#include "helper.h"
 #include "ray.h"
+#include "sphere.h"
+
+#include <math.h>
+#include <stdio.h>
 
 typedef struct {
 	float aspect_ratio, focal_length, pixel_samples_scale;

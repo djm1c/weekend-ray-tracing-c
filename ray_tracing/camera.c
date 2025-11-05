@@ -1,11 +1,5 @@
 #include "camera.h"
 
-#include "helper.h"
-
-#include <math.h>
-#include <stdio.h>
-#include <stdlib.h>
-
 /*
 Functionality:
     1. Construct and dispatch rays into the world.

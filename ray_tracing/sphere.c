@@ -1,8 +1,5 @@
 #include "sphere.h"
 
-#include <math.h>
-#include <stdlib.h>
-
 Sphere sphere(Point3 centre, double radius)
 {
 	return (Sphere){ .centre = centre, .radius = fmax(0.0, radius) };

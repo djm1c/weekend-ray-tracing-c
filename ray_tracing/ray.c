@@ -1,7 +1,5 @@
 #include "ray.h"
 
-#include <math.h>
-
 Ray ray(Point3 origin, Vec3 direction)
 {
 	return (Ray){ .origin = origin, .direction = direction };

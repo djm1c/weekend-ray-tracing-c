@@ -1,10 +1,5 @@
 #include "vec3.h"
 
-#include "helper.h"
-
-#include <math.h>
-#include <stdio.h>
-
 Vec3 v3(double x, double y, double z)
 {
 	return (Vec3){ .x = x, .y = y, .z = z };

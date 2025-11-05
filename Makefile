@@ -1,5 +1,6 @@
 CC      = clang
 CFLAGS  = -std=c23 -g -Wall -Wextra -Wpedantic -Wshadow -Wstrict-prototypes -Wvla
+# CPPFLAGS = <INCLUDE PATH> no longer have to write the full path of a header but only its file name in the sources: #include "icecream.h" instead of #include "../../path/to/include/icecream.h".
 RM      = rm -rf
 OBJDIR  = build/
 SRCDIR  = ray_tracing/
@@ -31,5 +32,6 @@ $(OBJDIR)camera.o: $(SRCDIR)camera.c $(SRCDIR)camera.h
 
 $(OBJDIR)helper.o: $(SRCDIR)helper.c $(SRCDIR)helper.h
 	$(CC) $(CFLAGS) -c $(SRCDIR)helper.c -o $(OBJDIR)helper.o
+
 clean:
 	$(RM) $(OBJDIR)main $(OBJDIR)ray.o $(OBJDIR)interval.o $(OBJDIR)colour.o $(OBJDIR)vec3.o $(OBJDIR)camera.o $(OBJDIR)sphere.o $(OBJDIR)helper.o $(OBJDIR)main.dSYM
