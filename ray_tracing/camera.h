@@ -18,8 +18,7 @@ typedef struct {
 
 void render(SphereList *world);
 Camera camera();
-static Colour ray_colour(Ray r, int max_depth, SphereList *world);
-static Vec3 sample_square();
-static Ray get_ray(Camera *cam, int i, int j);
+Colour ray_colour(Ray r, int max_depth, SphereList *world);
+Ray get_ray(Camera *cam, int i, int j);
 
 #endif

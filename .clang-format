@@ -3,3 +3,4 @@ ColumnLimit: 100
 BraceWrapping:
   AfterControlStatement: false
   AfterStruct: False
+SeparateDefinitionBlocks: Always

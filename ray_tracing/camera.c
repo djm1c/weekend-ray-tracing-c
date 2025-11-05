@@ -73,7 +73,7 @@ Camera camera()
     return cam;
 }
 
-static Colour ray_colour(Ray r, int max_depth, SphereList *world)
+Colour ray_colour(Ray r, int max_depth, SphereList *world)
 {
     HitRecord hit_rec;
 
@@ -97,7 +97,7 @@ static Vec3 sample_square()
     return (Vec3){.x = random_double() - 0.5, .y = random_double() - 0.5, .z = 0};
 }
 
-static Ray get_ray(Camera *cam, int i, int j)
+Ray get_ray(Camera *cam, int i, int j)
 {
     // Construct a camera ray originating from the origin and directed at
     // randomly sampled point around the pixel location i, j.

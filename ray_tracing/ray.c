@@ -48,7 +48,7 @@ bool hit_sphere(Sphere s, Ray r, Interval t, HitRecord *hit_rec)
     double root = (h - sqrt_discriminant) / a;
 
     if (!surrounds(&t, root)) {
-        double root = (h + sqrt_discriminant) / a;
+        root = (h + sqrt_discriminant) / a;
 
         if (!surrounds(&t, root)) {
             return false;
